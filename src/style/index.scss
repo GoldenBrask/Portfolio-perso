@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+* {
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Abril Fatface', cursive;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: black;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    padding: 20px;
+    //display: none;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        font-family: italiana;
+        font-size: large;
+
+    }
+
+    .nav_link {
+        display: flex;
+        gap: 20px;
+        margin-right: 20px;
+    }
+}
+
+.home_container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    h2 {
+        font-family: italiana;
+        font-size: xx-large
+    }
+
+    .sub_home_container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        gap: 100px;
+        margin-top: 50px;
+        max-width: 70%;
+
+        .presentation {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            p {
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: start;
+            }
+        }
+    }
+
+
+    .socials {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+
+        img {
+            width: 40px;
+            margin: 0px 20px;
+        }
+    }
+
+    .selfie {
+        width: 264px;
+        border-radius: 40px;
+    }
+}
+
+
+h2 {
+    padding: 50px;
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    justify-content: center; // Centrer horizontalement
+    align-items: center;     // Centrer verticalement
+    gap: 100px;
+    height: 100%;  
+}
+
+.skill {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    
+    span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+    }
+
+    .progress-ring__circle {
+        transition: stroke-dashoffset 0.35s;
+        transform: rotate(-90deg);
+        transform-origin: 50% 50%;
+    }
+}
+
+.portfolio {
+    padding: 50px;
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    min-width: 300px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.contact {
+    padding: 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+
+    form {
+        display: inline-block;
+        margin: auto;
+
+        input,
+        textarea {
+            display: block;
+            width: 300px;
+            padding: 10px;
+            margin: 10px auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    }
+}
+
+.contact {
+    padding: 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+
+    .contact-container {
+        display: flex;
+
+        .contact-left,
+        .contact-right {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .socials {
+            display: flex;
+            //justify-content: space-between;
+            margin-top: 20px;
+
+            img {
+                width: 40px;
+                cursor: pointer;
+            }
+        }
+
+        form {
+            margin: auto;
+
+            input,
+            textarea {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                resize: vertical;
+            }
+
+            input[type="submit"] {
+                background-color: #4caf50;
+                color: white;
+                cursor: pointer;
+                width: 100%;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+        }
+    }
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .footer-socials,
+    .footer-links {
+        display: flex;
+        gap: 15px;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+progress[value] {
+    --background: 
+      radial-gradient(50% 50%,var(--c) 98%,#0000) top/10% 10% no-repeat,
+      conic-gradient(var(--c) calc(var(--p)*1%),#0000 0); 
+  
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--background);
+    -webkit-mask: radial-gradient(50% 50%,#0000 79%,#000 80% 100%,#0000 102%)
+  }
+  progress[value]::-webkit-progress-bar {
+    background: var(--background);
+  }
+  progress[value]::-webkit-progress-value {
+    background: #0000;
+  }
+  progress[value]::-moz-progress-bar {
+    background: #0000;
+  }
+  
+  label {
+    --w: 160px;    
+    --c: #31c6f7;
+    
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-grid;
+    place-content: center;
+    width: var(--w);
+    aspect-ratio: 1;
+    position: relative;
+  }
+  label::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    inset: 45%;
+    background: var(--c);
+    transform: rotate(calc(var(--p)*3.6deg)) translateY(calc(217% - var(--w)/2));
+  }
+

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portefeuille de Brahim AHMAT SOUGOUDI, développeur web junior.">
+
+    <title>Home</title>
+    <link rel="stylesheet" href="./style/index.scss">
+</head>
+
+<body>
+    <!-- Section Acceuil -->
+    <section class="home" id="home">
+
+
+        <nav class="navbar">
+            <ul>
+                <li class="logo"><a href="#">
+                        <p><span>B</span>rahim</p>
+                    </a></li>
+
+                <div class="nav_link">
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </div>
+
+            </ul>
+        </nav>
+
+        <div class="home_container">
+            <h2>Bonjour,</h2>
+
+            <div class="sub_home_container">
+                <img src="./images/photo.jpg" alt="Photo de profil" class="selfie">
+                <div class="presentation">
+                    <h1 class="content">Brahim AHMAT SOUGOUDI</h1>
+                    <p class="content">Un développeur passionné par le design et la création d'interfaces intuitives.
+                        Actuellement en deuxieme année de license informatique et une expérience diverse et
+                        enrichissante, j'ai acquis un ensemble de compétences variées, allant de la conception web à la
+                        programmation. Ce portfolio est un reflet de mon parcours, de mes compétences et de ma passion
+                        pour le design et le développement. Je vous invite à explorer mes réalisations et à découvrir
+                        comment je peux contribuer à votre projet.</p>
+                    <div class="socials">
+                        <h4 class="content">Mes réseaux</h4>
+                        <div>
+                            <img src="./images/github.png" alt="github" class="content">
+                            <img src="./images/linkedin.png" alt="linkedin" class="content">
+                            <img src="./images/instagram.png" alt="instagram" class="content">
+                            <img src="./images/email.png" alt="email" class="content">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Section Compétences -->
+
+    <h2>Compétences</h2>
+
+    <section class="skills" id="skills">
+
+        <label style="--p:90;--c: #595959" class="skill"> HTML <progress max="100" value="90">90%</progress></label>
+        <label style="--p:80;--c: #7f7f7f" class="skill"> CSS <progress max="100" value="80">80%</progress></label>
+        <label style="--p:70;--c: #a5a5a5" class="skill"> JS <progress max="100" value="70">70%</progress></label>
+        <label style="--p:70;--c: #a5a5a5" class="skill"> Java <progress max="100" value="70">70%</progress></label>
+        <label style="--p:60;--c: #7f7f7f" class="skill"> Python <progress max="100" value="60">60%</progress></label>
+        <label style="--p:70;--c: #595959" class="skill"> SQL <progress max="100" value="70">70%</progress></label>
+
+    </section>
+
+
+
+    <!-- Section Portfolio -->
+    <section class="portfolio" id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="card" data-project="project1">
+            <img src="/src/images/Planifix.png" alt="Project 1" width="264px" height="200px">
+            <h3>Planifix</h3>
+            <p>Un site pour suivre vos films et séries</p>
+        </div>
+        <div class="card" data-project="project2">
+            <img src="./images/LyricsApp.png" alt="Project 1" width="264px" height="200px"
+                style="filter: grayscale(100%);">
+            <h3>LyricsApp</h3>
+            <p>Un logiciel pour trouver les paroles</p>
+        </div>
+        <div class="card" data-project="project3">
+            <img src="./images/Flooding.png" alt="Project 1" width="264px" height="200px"
+                style="filter: grayscale(100%);">
+            <h3>Jeu de la vie</h3>
+            <p>Développement du jeu de la vie en java</p>
+        </div>
+        <div class="card" data-project="project4">
+            <img src="./images/resto.png" alt="Project 1" width="264px" height="200px" style="filter: grayscale(100%);">
+            <h3>Resto</h3>
+            <p>Site maquette de restaurant</p>
+        </div>
+        
+
+        <!-- Fenetre modal -->
+        <div id="modal-project1" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h3>Planifix</h3>
+                <img src="/src/images/Planifix.png" alt="Project 1">
+                <p>Un site pour suivre vos films et séries</p>
+            </div>
+        </div>
+
+        <div id="modal-project2" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h3>LyricsApp</h3>
+                <img src="./images/LyricsApp.png" alt="Project 2">
+                <p>Un logiciel pour trouver les paroles</p>
+            </div>
+        </div>
+
+        <div id="modal-project3" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h3>Jeu de la vie</h3>
+                <img src="./images/LyricsApp.png" alt="Project 3">
+                <p>Un logiciel pour trouver les paroles</p>
+            </div>
+        </div>
+
+        <div id="modal-project4" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h3>Resto</h3>
+                <img src="./images/LyricsApp.png" alt="Project 4">
+                <p>Un logiciel pour trouver les paroles</p>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <!-- Section Contact -->
+
+    <section class="contact" id="contact">
+        <h2>Contactez-moi</h2>
+        <div class="contact-container">
+            <div class="contact-left">
+                <h4>Via le formulaire</h4>
+                <form action="https://formspree.io/f/maygwwkz" method="POST">
+                    <input type="text" name="name" placeholder="Votre nom">
+                    <input type="email" name="_replyto" placeholder="Votre email">
+                    <textarea name="message" placeholder="Votre message"></textarea>
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+            <div class="contact-right">
+                <h4>Ou sur mes réseaux</h4>
+                <div class="socials">
+                    <a href="https://github.com/" target="_blank">
+                        <img src="./images/github.png" alt="github">
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank">
+                        <img src="./images/linkedin.png" alt="linkedin">
+                    </a>
+                    <a href="https://instagram.com/" target="_blank">
+                        <img src="./images/instagram.png" alt="instagram">
+                    </a>
+                    <img src="./images/email.png" alt="email" id="copy-email" data-email="contact@brask.me">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2023 Votre Nom. Tous droits réservés.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+                <a href="mailto:your-email@example.com">Email</a>
+            </div>
+            <div class="footer-links">
+                <a href="#">Politique de confidentialité</a>
+                <a href="#">Conditions d'utilisation</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
